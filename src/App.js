@@ -12,10 +12,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/hotels" element={<List/>}/>
-        <Route path="/hotels/:id" element={<Hotel/>}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="https://backend-i21i.onrender.com/" element={<Home/>}/>
+        <Route path="https://backend-i21i.onrender.com/hotels" element={<List/>}/>
+        <Route path="https://backend-i21i.onrender.com/hotels/:id" element={<Hotel/>}/>
+        <Route path="https://backend-i21i.onrender.com/login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   );
