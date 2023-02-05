@@ -10,12 +10,20 @@ import Login from "./pages/login/Login";
 
 function App() {
   return (
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path={`${process.env.RENDER_PORT}`} element={<Home/>}/>
+    //     <Route path={`${process.env.RENDER_PORT}/hotel`} element={<List/>}/>
+    //     <Route path= {`${process.env.RENDER_PORT}/hotels/:id`} element={<Hotel/>}/>
+    //     <Route path= {`${process.env.RENDER_PORT}/login`} element={<Login/>}/>
+    //   </Routes>
+    // </BrowserRouter>
     <BrowserRouter>
       <Routes>
-        <Route path={`${process.env.RENDER_PORT}/`} element={<Home/>}/>
-        <Route path={`${process.env.RENDER_PORT}/hotel`} element={<List/>}/>
-        <Route path= {`${process.env.RENDER_PORT}/hotels/:id`} element={<Hotel/>}/>
-        <Route path= {`${process.env.RENDER_PORT}/login`} element={<Login/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/hotels" element={<List/>}/>
+        <Route path="/hotels/:id" element={<Hotel/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   );
