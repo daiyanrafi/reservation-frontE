@@ -12,10 +12,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={`${process.env.PORT}/`} element={<Home/>}/>
-        <Route path={`${process.env.PORT}/hotel`} element={<List/>}/>
-        <Route path= {`${process.env.PORT}/hotels/:id`} element={<Hotel/>}/>
-        <Route path= {`${process.env.PORT}/login`} element={<Login/>}/>
+        <Route path={`${process.env.RENDER_PORT}/`} element={<Home/>}/>
+        <Route path={`${process.env.RENDER_PORT}/hotel`} element={<List/>}/>
+        <Route path= {`${process.env.RENDER_PORT}/hotels/:id`} element={<Hotel/>}/>
+        <Route path= {`${process.env.RENDER_PORT}/login`} element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   );
