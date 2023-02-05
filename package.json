@@ -42,5 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },"proxy":"https://backend-i21i.onrender.com/api"
+  },
+  "proxy": "https://booking-backend-7r36.onrender.com"
 }

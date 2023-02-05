@@ -22,7 +22,8 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("/auth/login", credentials);
+      // console.log("TEST " + `${process.env.RENDER_PORT}/api/auth/login`);
+      const res = await axios.post(`/api/auth/login`, credentials);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
       navigate("/")
     } catch (err) {

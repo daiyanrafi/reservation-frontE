@@ -5,12 +5,11 @@ const useFetch = (url) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-
+  // let url = `${process.env.RENDER_PORT}${paramUrl}`; // assuming paramUrl has / in the beginning
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        console.log({url});
         const res = await axios.get(url);
         setData(res.data);
       } catch (err) {
